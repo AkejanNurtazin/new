@@ -3,6 +3,9 @@
 <head>
 <title>Example</title>
 <style>
+  body { background: url(https://orig00.deviantart.net/d454/f/2011/123/2/5/dark_sky_by_hayurikokoro-d3fia23.jpg); }
+</style>
+<style>
 body {
 display: grid;
 grid-template-areas:
@@ -17,7 +20,7 @@ margin: 0;
 }
 header, footer, article, nav, div {
 padding: 20px;
-background: gold;
+background: grey;
 }
 #pageHeader {
 grid-area: header;
@@ -41,5 +44,6 @@ grid-area: ads;
 <nav id=”mainNav”>Nav</nav>
 <div id=”siteAds”>Ads</div>
 <footer id=”pageFooter”>Footer</footer>
+<nav id=”mainNav”>Nav</nav>
 </body>
 </html>
