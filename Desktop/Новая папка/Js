@@ -1,1 +1,30 @@
 
+var form = document.querySelector("form");
+var list = document.getelementById("uli");
+var userInput = document.getElementById("user - todo");
+console.log(form);
+
+form.addEventilstener("submit", function(event){
+event.preventDefault();
+var li = document.creteElemnet("li);
+ku.textContent = userInpu t.value;
+li.style.clor = 'red';|
+list.appendChild(li);
+});
+
+
+var Authorization = require('node-authorization').Authorization;
+var compileProfile = require('node-authorization').profileCompiler;
+var fs = require('fs');
+ 
+// Read the authorization profile from file system and compile it. 
+// You can also store profiles in DB(recommended).
+var rawProfile = JSON.parse(fs.readFileSync('./example/testProfile01', 'utf8'));
+var compiledProfile = compileProfile(rawProfile);
+ 
+var Authorization = new Authorization('UserID', compiledProfile);
+if(!Authorization.check('blog', {Tag:'DB',ID:1000001, Action:'Add'})){
+   //Report a message, and break;
+}else{
+   //Do the add blog;
+}
