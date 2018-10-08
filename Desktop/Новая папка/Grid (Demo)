@@ -3,7 +3,7 @@
 <head>
 <title>Example</title>
 <style>
-  body { background: url(https://orig00.deviantart.net/d454/f/2011/123/2/5/dark_sky_by_hayurikokoro-d3fia23.jpg); }
+    body { background: url(https://orig00.deviantart.net/d454/f/2011/123/2/5/dark_sky_by_hayurikokoro-d3fia23.jpg) }
 </style>
 <style>
 body {
@@ -16,11 +16,14 @@ grid-template-rows: 60px 1fr 60px;
 grid-template-columns: 20% 1fr 15%;
 grid-gap: 10px;
 height: 100vh;
-margin: 0;
+margin: 200;
 }
 header, footer, article, nav, div {
 padding: 20px;
-background: grey;
+background: rgba(221, 221,221, 0.4);
+
+
+
 }
 #pageHeader {
 grid-area: header;
@@ -39,7 +42,7 @@ grid-area: ads;
 }
 </style>
 <body>
-<header id=”pageHeader”>Header</header>
+<header id=”pageHeader”>dsadsadsa</header>
 <article id=”mainArticle”>Article</article>
 <nav id=”mainNav”>Nav</nav>
 <div id=”siteAds”>Ads</div>
