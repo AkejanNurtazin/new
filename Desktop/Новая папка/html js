@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>js</title>
+</head>
+<body>
+<form>
+	<input type = "text" name ="1" id = "user-todo" >
+	<input type = "passord" name ="2" class="password" >
+</form>
+<ul id = "ull">
+</ul>
+<script scr = "text/javascript" scr ="index.html" ></script>
+</body>
+</html>
