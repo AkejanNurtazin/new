@@ -1,0 +1,52 @@
+div.div1 {
+    margin: 0px;
+    right: ;
+    width: 300px;
+    height: 330px;
+    border: 0px solid #333;
+}
+div.div2 {
+    margin: 0px;
+    right: ;
+    width: 295px;
+    height: 235px;
+    border: 3px solid #333;
+}
+div.div3 {
+    margin: 0px;
+    right: ;
+    width: 300px;
+    height: 330px;
+    border: 0px solid #333;
+}
+div.div4 {
+    margin: 0px;
+    right: ;
+    width: 295px;
+    height: 235px;
+    border: 3px solid #333;
+}
+div.div5 {
+    margin: 0px;
+    right: ;
+    width: 300px;
+    height: 330px;
+    border: 0px solid #333;
+}
+div.div6 {
+    margin: 0px;
+    right: ;
+    width: 295px;
+    height: 235px;
+    border: 3px solid #333;
+
+    #footer {
+      background-attachment:fixed;
+      margin: 1;
+      opacity: 0.90;
+      border-radius: 5px;
+      box-shadow: 0px 1px 7px 6px rgba(178, 34, 34); /* Параметры тени */
+      padding: 0px;
+      overflow: hidden;
+      background-color: #333;
+       }

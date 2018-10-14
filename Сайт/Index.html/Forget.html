@@ -1,0 +1,191 @@
+
+<html>
+<head>
+  <style>
+   html { height: 100%; }
+   body {
+    margin: 1; /* Убираем отступы */
+    background: url(https://storage.googleapis.com/images.frenchly.us/2017/01/plane.jpg); /* Параметры фона */
+    background-size: cover; /* Фон занимает всю доступную площадь */
+   }
+  </style>
+</head>
+<body>
+
+  <!--  Navvigation Bar -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {margin: 3;}
+
+  form {
+    position: relative;
+    opacity: 0.90;
+    border: 2px solid black; /* Параметры границы */
+    padding: 30px; /* Поля вокруг текста */
+    background-color: #363636;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 200px auto;
+    width: 500px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    -webkit-box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 7px 6px rgba(178, 34, 34); /* Параметры тени */
+}
+
+label {
+  color:gray;
+  font-size:18px;
+  width: 200; /* Ширина слоя */
+  margin:3; /* Значение отступов */
+  padding: auto; /* Поля вокруг текста */
+  background-color: #363636;
+  font-family: 'Open Sans', sans-serif;
+}
+
+input.button {
+      position: absolute;
+      opacity: 0.70;
+      color: #DCDCDC;
+      border: 1px solid #B22222;
+      background-color: #000000;
+      text-align: center;
+      padding: 8px 20px;
+      text-decoration: none;
+      box-shadow: 0px 0px 2px 2px rgba(178, 34, 34); /* Параметры тени */
+  }
+
+input.button:hover:not(.active) {background-color: #B22222;}
+
+input.button:hover.active {background-color: #DCDCDC;}
+
+input.button.right {float: right;}
+
+td select,
+td input {
+  align:right;
+  margin: 3px;
+  width: 200px;
+}
+
+
+.error input,
+.error textarea {
+  margin: 3px;
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+}
+
+
+ul.topnav {
+
+    list-style-type: none;
+    margin: 0;
+    opacity: 0.90;
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px 6px rgba(178, 34, 34); /* Параметры тени */
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: Gainsboro;
+    text-align: center;
+    padding: 13px 20px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #B22222;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+#footer {
+  background-attachment:fixed;
+  margin: 1;
+  opacity: 0.90;
+  border-radius: 5px;
+  box-shadow: 0px 1px 7px 6px rgba(178, 34, 34); /* Параметры тени */
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+   }
+
+
+</style>
+  </head>
+  <body>
+
+  <ul class="topnav">
+    <li><a class="" href="menu.html">Blog</a></li>
+    <li><a href="About.html">News</a></li>
+    <li class="right"><a href="Close windows">Quite</a></li>
+    <li class="right"><a href="Login.html">Login/Register</a></li>
+  </ul>
+
+
+  <form>
+    <p><label>Забыли пароль?</label></p>
+    <table>
+      <tr>
+        <td></td>
+        <td>
+            <input type="text" name="from" placeholder="Почта/моб.тел"/>
+        </td>
+      </tr>
+      <tr>
+        <tr></tr>
+        <tr></tr>
+      </tr>
+    </table>
+    <input class="button" type="button" onclick="validate(this.form)" value="Восстановить">
+  </form>
+
+  <script>
+    function showError(container, errorMessage) {
+      container.className = 'error';
+      var msgElem = document.createElement('span');
+      msgElem.className = "error-message";
+      msgElem.innerHTML = errorMessage;
+      container.appendChild(msgElem);
+    }
+
+    function resetError(container) {
+      container.className = '';
+      if (container.lastChild.className == "error-message") {
+        container.removeChild(container.lastChild);
+      }
+    }
+
+    function validate(form) {
+      var elems = form.elements;
+
+      resetError(elems.from.parentNode);
+      if (!elems.from.value) {
+        showError(elems.from.parentNode, ' Введите почту/моб.тел ');
+      }
+
+    }
+  </script>
+
+  <div id="footer">
+     &copy; Халаф Алан и Нуртазин Акежан
+    </div>
+
+
+</body>
+</html>
